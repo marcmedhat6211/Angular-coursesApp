@@ -145,6 +145,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "coursesApp"
+    }
+  },
+  "defaultProject": "coursesApp",
+  "cli": {
+    "analytics": "bd485c9a-4091-440c-b979-014197269712"
+  }
 }
