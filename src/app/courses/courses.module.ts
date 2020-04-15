@@ -6,14 +6,23 @@ import { CoursesComponent } from './courses.component';
 import { CoursesListComponent } from './courses-list/courses-list.component';
 import { CourseItemComponent } from './course-item/course-item.component';
 import { CourseDetailsComponent } from './course-details/course-details.component';
-import { CoursesService } from '../course/services/courses.service';
+import { CoursesService } from './services/courses.service';
+import { FormsModule } from '@angular/forms';
+import { CourseFormComponent } from './course-form/course-form.component';
 
 
 @NgModule({
-  declarations: [CoursesComponent, CoursesListComponent, CourseItemComponent, CourseDetailsComponent],
+  declarations: [
+    CoursesComponent, 
+    CoursesListComponent, 
+    CourseItemComponent, 
+    CourseDetailsComponent,
+    CourseFormComponent
+  ],
   imports: [
     CommonModule,
     CoursesRoutingModule,
+    FormsModule
   ],
   exports: [CoursesComponent],
 })

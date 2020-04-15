@@ -3,18 +3,18 @@
     <hr>
     <div class="row">
       <div class="col-6">
-        <form class="form-inline">
-          <div class="form-group mx-sm-6 mb-2">
-            <label for="inputPassword2" class="sr-only">Search</label>
-            <input type="text" class="form-control" id="search" name="search" placeholder="Search">
-          </div>
-        </form>
+      </div>
+      <div class="col-6">
+        <a class="btn btn-success float-right" [routerLink]="['/courses','new']">Add New Course</a>
       </div>
     </div>
     <hr>
     <div class="row">
       <div class="col-6">
         <app-courses-list></app-courses-list>
+      </div>
+      <div class="col-6">
+        <router-outlet></router-outlet>
       </div>
     </div>
   </div>
